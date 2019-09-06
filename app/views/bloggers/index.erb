@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <h1>Listed Bloggers</h1>
+            <ul>
+                <% @bloggers.each do |b| %>
+                    <li><%= link_to "#{b.name}", blogger_path(b.id) %></li>
+                <% end %>
+            </ul>
+    </body>
+</html>

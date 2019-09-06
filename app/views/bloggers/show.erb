@@ -1,0 +1,5 @@
+<h1><%= @blogger.name %></h1>
+<h3>Age: <%= @blogger.age %></h3>
+<h3>Bio: <%= @blogger.bio %></h3>
+<h3>Likes: <%= @numLikes %>
+<h3>Top Post: <%= link_to("#{@topPost.title}", post_path(@topPost)) %>
